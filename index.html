@@ -14,9 +14,14 @@
   </head>
   <body>
   <script>
+    var colors = ['blue','green','orange','purple','black']
+    var index = 0;
     function changecolor() {
-      document.body.style['background-color'] = "blue";
-      console.log(document.body);
+      document.body.style['background-color'] = colors[index];
+      index = index + 1;
+      if (index == colors.length) {
+        index = 0;
+      }
     }
   </script>
   <h1>Change Color Demo</h1>
